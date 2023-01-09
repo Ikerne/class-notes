@@ -10,5 +10,7 @@ Este es el primer archivo que cambio en GitHub :)
 
 
 git add .
-got commit -m "mensaje descriptivo sencillo"
+git commit -m "mensaje descriptivo sencillo"
 git push origin main
+
+git log  is to check the commits made today
