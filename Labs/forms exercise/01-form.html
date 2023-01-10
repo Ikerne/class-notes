@@ -2,6 +2,11 @@
 1:25
 Extra: a ver si conseguís que, al darle al botón de submit, registre en la consola "form submitted"!-->
 
+<!-- En el mismo documento del formulario vamos a crear un style tag dentro del <head>. Apuntamos al form y le damos un background color. Al input de nombre le añadimos una clase, y apuntando a esa clase le asignamos un tamaño de letra. Al input de edad le damos un id y, apuntando a ese id, le damos un margen de 24px.-->
+  
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +14,28 @@ Extra: a ver si conseguís que, al darle al botón de submit, registre en la con
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+    rel="stylesheet"
+
+  />
+    <style>
+      @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap);
+      #exampleForm {
+          background-color: rgba(0, 123, 255, 0.423);
+      } 
+
+     .nameFormat {
+          font-size: 8px;
+        }
+      
+      #age {
+        margin: 24px;
+      }
+     *{ font-family: "Roboto", sans-serif;}
+    </style>
+
 </head>
 <body>
     <form id="exampleForm" onsubmit="alert('Form Submitted')">
@@ -18,6 +45,7 @@ Extra: a ver si conseguís que, al darle al botón de submit, registre en la con
           id="formName"
           name="name"
           placeholder="Enter name Here"
+          class="nameFormat"
         /><br />
         <label for="lastName">Last name:</label><br />
         <input
@@ -35,7 +63,7 @@ Extra: a ver si conseguís que, al darle al botón de submit, registre en la con
         /><br /><br />
 
         <textarea name="message" rows="10" cols="30" placeholder="Five favourite bands"></textarea>
-        /><br /><br />  
+        <br /><br />  
         
         <label for="genre">Genre:</label><br />
         <select id="genre" name="genre">
