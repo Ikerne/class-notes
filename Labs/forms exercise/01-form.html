@@ -1,0 +1,57 @@
+<!--Hacemos un formulario de grupos musicales. Tendremos un input type text para el full name del usuario. Tendremos un input type number para pedir la edad del usuario (debe tener un mínimo de 0 y un máximo de 18). También tendremos un textarea para que el usuario inpute sus 5 grupos favoritos. Este textarea debe tener un placeholder para guiar al usuario. Vamos a hacer un dropdown que permita al usuario escoger entre 3 opciones su género musical favorito. Finalmente tendremos un input type submit para poder enviar el formulario.
+1:25
+Extra: a ver si conseguís que, al darle al botón de submit, registre en la consola "form submitted"!-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="exampleForm" onsubmit="alert('Form Submitted')">
+        <label for="name">First name:</label><br />
+        <input
+          type="text"
+          id="formName"
+          name="name"
+          placeholder="Enter name Here"
+        /><br />
+        <label for="lastName">Last name:</label><br />
+        <input
+          type="text"
+          id="formlastName"
+          name="lastName"
+          placeholder="Enter last name here"
+        /><br /><br />
+        <input
+        type="number"
+        id="age"
+        min="0"
+        max="18"
+        placeholder="age"
+        /><br /><br />
+
+        <textarea name="message" rows="10" cols="30" placeholder="Five favourite bands"></textarea>
+        /><br /><br />  
+        
+        <label for="genre">Genre:</label><br />
+        <select id="genre" name="genre">
+        <option value="Choose a genre">Choose a genre</option>  
+        <option value="pop">Pop</option>
+        <option value="rock">Rock</option>
+        <option value="jazz">Jazz</option>
+        </select>
+        <br /><br />
+  
+        <input type = "submit" value="Submit"  />
+   
+    
+     
+
+    </form>
+
+</body>
+</html>
