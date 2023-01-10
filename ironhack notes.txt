@@ -1,0 +1,45 @@
+Ironhack notes
+
+whoami 
+
+virgulilla "~" es con alt gr + space
+
+
+ls es list sistem
+
+cd es para chamge directory
+
+path to desktop
+
+/c/users/ikern/OneDrive/Escritorio
+
+path to class-notes
+/c/users/ikern/OneDrive/Escritorio/class-notes
+
+
+clear (cleans screen without deleting)
+
+cd .. (returns to last directory)
+
+
+make directory
+mkdir + file-name
+
+touch jarko.png 
+
+to open app
+open -a chrome
+
+
+connect respository to github
+
+
+git log  is to check the commits made today
+put q + enter to quit log
+
+
+git add .
+git commit -m "mensaje descriptivo sencillo"
+git push origin main
+
+git log  is to check the commits made today
