@@ -7,13 +7,47 @@
     
     <title> Iron Comments </title>
     
-    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <body>
+        <div id="form-container">
+      
+        <form>
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="formName"
+            name="name"
+            placeholder="Enter name here"
+            /><br  />
+            <br />
+            <label for="email">Email:</label><br />
+            <input 
+            type="email" 
+            id="email" 
+            name="email"
+            placeholder="Enter email here" />
+            <br />
+            <br />
+            <label for="comment">Comment:</label><br />
+            <textarea name="comment" rows="10" cols="30" placeholder="Comment"></textarea>
+            <br />
+            <br />
+      
+            <label for="email-updates"><i>Recieve email updates?</i></label>
+                  <input
+                    type="checkbox"
+                    id="email-updates"
+                    name="email-updates"/>
+            <br /><br />
+            <input id="submit" type="submit" value="Submit" />
+            
+        </form>
+      </div>
+      
+      </body>
 
-    <form id="form-container">
-        Name: Email: Comment: Receive email updates? Submit
-    </form>
 
 </body>
 </html>

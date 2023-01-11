@@ -21,7 +21,7 @@ body {
     width: 250px;
     position: center center;
     padding: 10px;
-    color: white;
+    color: rgb(255,255,255);
     font: serif;
 }
 input{
@@ -33,7 +33,7 @@ textarea{
 }
 #submit{
     background-color:rgb(67, 163, 230);
-    color: white;
+    color: rgb(255,255,255);
     border-radius: 5px;
 
 }
