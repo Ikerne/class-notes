@@ -1,0 +1,39 @@
+*{ background-color: rgb(25, 33, 41);
+
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    padding-top: 100px;
+    width: 100vw;  
+    font: serif;  
+
+}
+
+
+
+#form-container {
+    border: 3px solid;
+    border-color: rgb(67, 163, 230);
+    margin: auto;
+    width: 250px;
+    position: center center;
+    padding: 10px;
+    color: white;
+    font: serif;
+}
+input{
+    background-color: white;
+    
+}
+textarea{
+    background-color: white;
+}
+#submit{
+    background-color:rgb(67, 163, 230);
+    color: white;
+    border-radius: 5px;
+
+}
