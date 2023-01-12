@@ -1,0 +1,53 @@
+<!-- Flexbox 1
+Creamos un div. Este debe contener 4 imágenes y otro div. El div anidado debe contener, a su vez, tres <p> con nombres propios vuestros, de vuestra familia, amigos... lo que queráis. Primero vamos a ordenar el div padre para que todo su contenido se ordene como una columna alineada a la derecha. A su vez, el <p> anidado debe ordenar los p como una fila y poner espacio entre cada uno de los <p>. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* Primero vamos a ordenar el div padre para que todo su contenido se ordene como una columna alineada a la derecha. */
+body {
+    margin:0;
+    padding: 0;
+    width: 800px;;
+}
+#div-padre{
+    margin: 10px;
+    padding:1px;
+    display: flex;
+    outline: 1px solid red !important;
+    flex-direction: column;
+    align-items: flex-end;   
+}
+img{
+    width: 100px;
+}
+/* A su vez, el <p> anidado debe ordenar los p como una fila y poner espacio entre cada uno de los <p>. */
+#div-hijo {
+    display:flex;
+    flex-direction: row;
+    width:300px;
+    margin:2px;
+    gap: 4rem;
+    }
+    </style>
+</head>
+<body>
+    <div id="div-padre">
+    <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRYbjwYDgOp885eqAl6jpmTjhERxgqfqmLD60vusbN21qprVFdVT4TVMgrb759uE8SMLfoNc7JoBsHO7BI" alt="cat">
+    <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRYbjwYDgOp885eqAl6jpmTjhERxgqfqmLD60vusbN21qprVFdVT4TVMgrb759uE8SMLfoNc7JoBsHO7BI" alt="cat">
+    <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRYbjwYDgOp885eqAl6jpmTjhERxgqfqmLD60vusbN21qprVFdVT4TVMgrb759uE8SMLfoNc7JoBsHO7BI" alt="cat">
+    <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRYbjwYDgOp885eqAl6jpmTjhERxgqfqmLD60vusbN21qprVFdVT4TVMgrb759uE8SMLfoNc7JoBsHO7BI" alt="cat">
+    <div id="div-hijo">
+        <p>Roque</p>
+        <p>Juana</p>
+        <p>Durgo</p>
+    </div>
+</div>
+</body>
+</html>
