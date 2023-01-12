@@ -1,0 +1,94 @@
+<!-- Primero creamos un div que contenga un <h1> con el texto que queráis. Este debería estar posicionado de tal manera que quede enganchado arriba de todo de la página, incluso cuando hacemos scroll down.
+    Después creamos un div que contenga 4 imágenes distintas (de animales, grupos de música... lo que queráis). El div contenedor debería tener un tamaño de al menos 650x650 px, y debería estar posicionado de tal manera que empiece a 150px de la parte superior del viewport y a 150px del lado izquierdo (tenéis que colocarlo usando position, no margin ni padding). Después, cada imagen debería estar posicionada a una de las puntas del div contenedor. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+            padding: 0;
+        }
+      .title {
+        position: fixed;
+        /* position:sticky; can also be used for this purpose */
+        top: 0;
+        background: blueviolet;
+        width: 100vw;
+        z-index: 1;
+        height: 20px;
+      }
+      h1{
+        margin-top: 0;
+        font-size: 16px;
+        text-align: center;
+
+      }
+      .images {
+        background-color: rgba(0, 145, 255, 0.5);
+        width: 650px;
+        height: 650px;
+        margin: 0;
+        padding: 0;
+        top: 150px;
+        left: 150px;
+        position: relative;
+      }
+
+      /* general styling images */
+      img {
+        width: 200px;
+        height: 200px;
+      }
+
+      img:nth-child(1) {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      img:nth-child(2) {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      img:nth-child(3) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      img:nth-child(4) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Cafe</h1>
+    </div>
+
+    <div class="images">
+      <img
+        src="https://i0.wp.com/www.bcncoffeeguide.com/wp-content/uploads/2022/03/Specialty-Coffee-Barcelona-Perfumeria-de-cafe-Delsams-19.jpg?resize=1365%2C2048&ssl=1"
+        alt="img 1"
+      />
+      <img
+        src="https://www.civitatis.com/blog/wp-content/uploads/2021/11/cafe-granos.jpg"
+        alt="img 2"
+      />
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/1200px-Roasted_coffee_beans.jpg"
+        alt="img 3"
+      />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhbLSFKIe7QANF6-VoPUM329XQNjPXpwf6tw&usqp=CAU"
+        alt="img 4"
+      />
+    </div>
+  </body>
+</html>
