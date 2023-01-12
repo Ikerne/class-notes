@@ -1,0 +1,51 @@
+<!-- Grid 2
+Creamos una section que contenga 4 divs. El primer div contendrá el texto "Header", el segundo "Navbar", el tercero "Sidebar" y el cuarto "Main". Convertid la section en un grid que mida 100vh y que reparta todos los divs de la manera que veis en la imagen. Recordad trabajar con las propiedades de grid-template-rows y grid-template-columns para organizar los divs en si.
+https://f10ftfrontend-ttn2150.slack.com/files/U04GEQ8MUAG/F04JPD10LE8/image.png (edited)  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr 7fr;
+            grid-template-rows: 1fr 1fr 7fr;
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+            height:100vh;
+}
+div:nth-child(1){
+    background-color: rgba(255, 192, 203, 0.5);
+    grid-column: 1 / 3;
+   
+}
+div:nth-child(2){
+    background-color: rgba(0, 0, 255, 0.5);
+    grid-column: 1/ 3 ;
+    grid-row: 2 ;
+}
+div:nth-child(3){
+    background-color: rgba(255, 255, 0, 0.5);
+    grid-column: 1/ 2 ;
+    grid-row: 3 ;
+}
+div:nth-child(4){
+    background-color: rgba(0, 128, 0, 0.5);
+    grid-column: 2 ;
+    grid-row: 3 ;
+}   </style>
+</head>
+<body>
+    <section class="parent">
+        <div>Header</div>
+        <div>Navbar</div>
+        <div>Sidebar</div>
+        <div>Main</div>
+    </section>
+    
+</body>
+</html>
