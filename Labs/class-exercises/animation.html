@@ -1,0 +1,60 @@
+<!-- animation called wutang
+elemento en 0%
+va a tener un w y h de 100 px
+top left 
+al 25 y 75%
+w & h 200 px
+en 50 y 100 
+w y h 20 px
+cambiamos color en todas las instancias y va a ser infinita -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        div {
+            /* width:100px;
+            height: 100px;
+            background-color: red; */
+            margin-top: 0;
+            margin-left: 0;
+            animation-name: WuTang;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-fill-mode: both;
+            animation-direction:alternate ;
+            animation-play-state: running;
+            animation-delay: 200ms;
+            position: relative;
+
+        }
+@keyframes WuTang{
+    0% {
+        background-color: yellow;
+        width:100px;
+        height: 100px;
+    }
+    50%, 100%{
+        background-color: purple;
+        width: 200px;
+        height: 200px;
+    }
+    25%, 75% {
+        background-color: green;
+        width:20px;
+        height: 20px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="animation"></div>
+</body>
+</html>
