@@ -7,19 +7,8 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
-  /* font-weight: 300;
-    left: 30px;
-    right: 90px; */
 }
-/* h1 {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 4em;
-    color: white;
-    position: relative;
-    text-align: center;
-    top: 270px;
-  } */
+
 h2 {
   font-size: 2rem;
   font-weight: 300;
@@ -58,14 +47,9 @@ main section {
 .description p {
   font-size: 1.5rem;
   font-weight: 300;
-  margin: 0 0 3rem 0;
-  text-emphasis: justify;
-  /* margin-left: 100px;
-  margin-right: 100px;
+  margin: 0 3rem 3rem 3rem;
   text-align: center, justify;
-  margin: 35px;
-  position: relative;
-  padding: 30px; */
+
 }
 hr {
   width: 90%;
@@ -81,32 +65,13 @@ ul {
   list-style-type: "- ";
 }
 
-/* .directions ol {
-    list-style-type: none;
-    counter-reset: section;
-}
-.directions ol li::before{
-    content: "" counter(section ") ");
-    counter-increment: section;
 
-} */
-/* .ingredients-image {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-} */
 
 .directions {
-  margin: 30px;
+  margin: 0 0 20rem 4rem;
   position: relative;
   padding: 10px;
   text-align: center, justify;
+  
 }
 
-/* .directions-image {
-  width: 50%;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-} */
