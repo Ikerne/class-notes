@@ -46,4 +46,9 @@ if (hacker1 < hacker2) {
 // The driver's name goes first.
 // Yo, the navigator goes first definitely.
 // What?! You both have the same name?
-
+//with for looo
+let newHacker = "";
+for (let i= 0; i <hacker1.length;i++){
+    newHacker+=hacker1[i].split(" ").join
+}
+// note to self review class notes and study this again
