@@ -5,7 +5,7 @@ let sum = 0;
 for (let i = 0; i<=100; i++) { 
     sum += i;
 }
-console.log(sum);
+console.log(`the total of the sum of the numbers from 1 to 100 is ${sum}`);
 
 
 
@@ -51,15 +51,21 @@ for (let i=2; i<=20; i +=2 ) {
     console.log(i);
 }
 
+let evenNumber = 2;
+
+while(evenNumber <= 20) {
+  console.log(evenNumber);
+  evenNumber++;
+}
 // ------------- Ejercicio 4 (do while): -------------
 //Crea una variable llamada "numeroAdivinar" con un número entero entre 1 y 10 (puedes asignarle un valor manualmente).
 // Crea una variable llamada "numeroIngresado" y asignale el valor 0.
 // Utiliza un bucle do...while para asignar a la variable "numeroIngresado" un número entero obtenido de un array de números [1,2,3,4,5,6,7,8,9,10]. El bucle debe continuar hasta que "numeroIngresado" sea igual a "numeroAdivinar".
 // Una vez que el bucle finaliza, imprime en la consola el número de iteraciones realizadas.
 
-
-let numeroAdivinar = 5;
-let numeroIngresado = 0;
+//way 1
+let numeroAdivinar = [5];
+let numeroIngresado = [0];
 let counter = 0;
 do {
     numeroIngresado = [1,2,3,4,5,6,7,8,9,10][Math.floor(Math.random() * 10)];
@@ -67,6 +73,15 @@ do {
 } while (numeroIngresado !== numeroAdivinar);
 console.log("Number of iterations made: " + counter);
 
-
+// way 2
+let numeroAdivinar2 = 5;
+let numeroIngresado2 = 0;
+let arrayDeNumeros = [1,2,3,4,5,6,7,8,9,10];
+let i = 0;
+do{
+  numeroIngresado2 = arrayDeNumeros[i]
+  i++
+} while ((numeroIngresado2!= numeroAdivinar2));
+console.log(`El numero a adivinar era ${numeroAdivinar2} y se adivinó en ${i} intentos`);
 
 // with javascript create a varfiable called numeroAdivinar with a value of 5 and another variable called numero ingresado with a value of 0. Use the loop do while to asign numeroIngresado a number form this array [1,2,3,4,5,6,7,8,9,10]. The loop must continue until numeroIngresado = numeroAdivinar. print the number of iterations made
