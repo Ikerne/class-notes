@@ -1,43 +1,116 @@
 // Iteration #1: Find the maximum
-function maxOfTwoNumbers() {}
+//Implement the function maxOfTwoNumbers that takes two numbers as arguments and returns the bigger number.
+// let maxOfTwoNumbers = [1, 2]
+
+function maxOfTwoNumbers(num1, num2) {
+  return(num1 > num2) ? num1 : num2;
+}
+console.log(maxOfTwoNumbers(1, 35));
 
 
 
 // Iteration #2: Find longest word
+
+//Implement the function findLongestWord that takes as an argument an array of words and returns the longest one. If there are 2 with the same length, it should return the first occurrence.
+
+// You can use the following array to test your solution:
 const words = ['mystery', 'brother', 'aviator', 'crocodile', 'pearl', 'orchard', 'crackpot'];
 
-function findLongestWord() {}
+function findLongestWord(words) {
+  if(words.length === 0) return null; 
+  let longestWord = "";
+  for (let i = 0; i< words.length; i++){
+    if (words[i].length > longestWord.length){
+      longestWord = words[i];
+    }
+  }
+  return longestWord;
+}
+console.log(findLongestWord(words));
 
 
 
 // Iteration #3: Calculate the sum
+//Iteration #3.1: Sum numbers
+// Calculating a sum can be as simple as iterating over an array and adding each of the elements together.
+
+// Implement the function named sumNumbers that takes an array of numbers as an argument, and returns the sum of all of the numbers in the array. Later in the course, we will learn how to do this by using the reduce array method, which will make your work significantly easier. For now, let's practice the "declarative" way of adding values, using loops.
+
+// You can use the following array to test your solution:
+
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
+function sumNumbers(numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length;i++){
+    sum += numbers[i];
+  }
+  return sum;
+}
+
+console.log(sumNumbers(numbers))
 
 
-
-// Iteration #3.1 Bonus:
+// Iteration #3.2 Bonus:
 function sum() {}
 
 
 
 // Iteration #4: Calculate the average
+// Calculating an average is a very common task. Let's practice it a bit.
+
+// The logic behind this:
+
+// Find the sum as we did in the first exercise (or how about reusing the function sumNumbers()?)
+// Take that sum and divide it by the number of elements in the array.
+
+
+
 // Level 1: Array of numbers
+// Implement the function averageNumbers that expects an array of numbers and returns the average of the numbers.
+
+// You can use the following array to test your solution:
+
 const numbersAvg = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
+function averageNumbers(numbersAvg) {
+  if(numbersAvg.length === 0) return null; 
+  let sum = 0;
+  for (let i = 0; i <numbersAvg.length; i++){
+    sum += numbersAvg[i];
+  }
+  return sum / numbersAvg.length;
+}
+console.log(averageNumbers(numbersAvg))
 
 
 // Level 2: Array of strings
+// Implement the function named averageWordLength that receives as a single argument an array of words and returns the average length of the words:
+
+// You can use the following array to test your solution:
+
 const wordsArr = ['seat', 'correspond', 'linen', 'motif', 'hole', 'smell', 'smart', 'chaos', 'fuel', 'palace'];
 
-function averageWordLength() { }
+function averageWordLength(wordsArr) {
+  if(wordsArr.length === 0) return null;
+  let sum = 0;
+  for (let i = 0; i < wordsArr.length; i++){
+    sum += wordsArr[i].length;
+  }
+  return sum / wordsArr.length;
+ }
+ console.log(averageWordLength(wordsArr));
 
 // Bonus - Iteration #4.1
 function avg() {}
 
 // Iteration #5: Unique arrays
+// Take the following array, remove the duplicates, and return a new array. You are more than likely going to want to check out the Array methods indexOf and includes.
+
+// Do this in the form of a function uniquifyArray that receives an array of words as an argument.
+
+// You can use the following array to test your solution:
+
 const wordsUnique = [
   'crab',
   'poison',
@@ -52,18 +125,44 @@ const wordsUnique = [
   'bring'
 ];
 
-function uniquifyArray() {}
+function uniquifyArray(wordsUnique) {
+  if(wordsUnique.length === 0) return null;
+  for(let i = 0; i < wordsUnique.length; i++){
+    if (wordsUnique.indexOf(wordsUnique[i]) !== i){
+      wordsUnique.splice(i, 1);
+      i--
+    }
+  }
+  return wordsUnique
+}
+console.log(uniquifyArray(wordsUnique));
 
 
 
 // Iteration #6: Find elements
+// with javascript using the method .includes  Let's create a simple array search.
+
+// Declare a function named doesWordExist that will take in an array of words as one argument, and a word to search for as the other. Return true if the word exists in the array, otherwise, return false.
+
+// You can use the following array to test your solution:
+
 const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating', 'truth', 'disobedience'];
 
-function doesWordExist() {}
+function doesWordExist(words2, wordToSearch) {
+  if(!words2.length) return null;
+  return words2.includes(wordToSearch);
+}
+
+console.log(doesWordExist(wordsFind, `machine`));
+console.log(doesWordExist([], `machine`));
 
 
 
 // Iteration #7: Count repetition
+// Declare a function named howManyTimes that will take in an array of words as the first argument, and a word to search for as the second argument. The function will return the number of times that word appears in the array.
+
+// You can use the following array to test your solution:
+
 const wordsCount = [
   'machine',
   'matter',
@@ -78,7 +177,19 @@ const wordsCount = [
   'matter'
 ];
 
-function howManyTimes() {}
+function howManyTimes(words3, wordToSearch) {
+  let count = 0;
+  for(let i = 0; i < words3.length; i++) {
+      if(words3[i] === wordToSearch) {
+          count++;
+      }
+  }
+  return count;
+}
+
+console.log(howManyTimes(wordsCount, 'matter')); // 4
+console.log(howManyTimes(wordsCount, 'example')); // 0
+
 
 
 
