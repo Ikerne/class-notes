@@ -26,13 +26,14 @@ body {
 
 /* header section */
 nav{
-    /* position: fixed; */
+    position: fixed;
     z-index: 2;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    background-color: #fafafa;
 }
 
 nav img {
