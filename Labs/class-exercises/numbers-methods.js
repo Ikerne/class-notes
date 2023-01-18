@@ -12,7 +12,7 @@ En una página de diseño quieren crear una paleta de colores, para ello quieren
 
 let colorR = 0;
 let colorG = 0;
-let colorB = 0;
+let colorB = 255;
 
 colorR +=33;
 colorG +=66;
@@ -25,3 +25,6 @@ colorG = colorG.toString(16);
 colorB = colorB.toString(16);
 
 console.log(colorR, colorG, colorB);
+
+let newColor = "#" + colorR + colorG+ colorB;
+console.log(newColor);
