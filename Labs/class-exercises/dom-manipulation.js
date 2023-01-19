@@ -92,7 +92,7 @@ function addTable() {
     let table = document.createElement("table");
     for (let i = 0; i < 3; i++) {
       let row = document.createElement("tr");
-      for (var j = 0; j < 3; j++) {
+      for (let j = 0; j < 3; j++) {
         let cell = document.createElement("td");
         let cellText = document.createTextNode("Cell " + (i+1) + "," + (j+1));
         cell.appendChild(cellText);
