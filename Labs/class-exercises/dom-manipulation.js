@@ -61,15 +61,44 @@ let greenBox = document.createElement("div");
 let newGreenBox = document.querySelector("#block2Q2").appendChild(greenBox);
 greenBox.className = "green-box";
 console.log(greenBox);
+greenBox.innerHTML = "greenBox Block 2 Q 2"
 
 // 3º - Crea una <div class="remove-class"></div> y elimínale la clase mediante js. La clase remove-class debe hacer que el elemento mida 100vw de ancho y 100px de alto y tener un background azul.
 
 let removeClass =document.createElement("div");
-let newRemoveClass= document.querySelector("block2Q3").appendChild(removeClass);
-removeClass.className = "remove-class";
+let newRemoveClass= document.querySelector("#block2Q3").appendChild(removeClass);
+removeClass.className = "removeClass";
+//uncomment one of the following and see it change:
+removeClass.classList.remove("removeClass");
+removeClass.classList.add("green-box")
 
 
+removeClass.innerHTML = "removeClass Block 2 Q 3"
+console.log(removeClass);
 
 // 4º 1 - Crea un botón que, al ser pulsado, introduzca en el dom un <p>Texto insertado</p>
 
+function addText() {
+    let newParagraph = document.createElement("p");
+    let text = document.createTextNode("Texto insertado");
+    newParagraph.appendChild(text);
+    document.querySelector("#block2Q4").appendChild(newParagraph);
+  }
+
+
 // 5º - Crea un botón que, al ser pulsado, introduzca una tabla de tres columnas y tres filas.
+
+function addTable() {
+    let table = document.createElement("table");
+    for (let i = 0; i < 3; i++) {
+      let row = document.createElement("tr");
+      for (var j = 0; j < 3; j++) {
+        let cell = document.createElement("td");
+        let cellText = document.createTextNode("Cell " + (i+1) + "," + (j+1));
+        cell.appendChild(cellText);
+        row.appendChild(cell);
+      }
+      table.appendChild(row);
+    }
+    document.querySelector("#block2Q5").appendChild(table);
+  }
