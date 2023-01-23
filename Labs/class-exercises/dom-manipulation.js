@@ -70,7 +70,7 @@ let newRemoveClass= document.querySelector("#block2Q3").appendChild(removeClass)
 removeClass.className = "removeClass";
 //uncomment one of the following and see it change:
 removeClass.classList.remove("removeClass");
-removeClass.classList.add("green-box")
+// removeClass.classList.add("green-box")
 
 
 removeClass.innerHTML = "removeClass Block 2 Q 3"

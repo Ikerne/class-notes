@@ -205,7 +205,6 @@ section:nth-of-type(2) {
     justify-content: space-around;
     padding: 1rem;
     z-index: -1;
-   
   }
    .bottom-text {
     display: flex;
