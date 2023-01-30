@@ -1,4 +1,4 @@
-# my-first-vue-project
+# lab-vue-c-intro
 
 This template should help get you started developing with Vue 3 in Vite.
 
@@ -27,40 +27,3 @@ npm run dev
 ```sh
 npm run build
 ```
-
-
-
-
-#### Class notes
-
-SFC === Single File Component === 
-
-Archivos que terminan con .vue
-
-3 elementos:
-html ---
-html=== <template>
-css ---
-css === <style>
-js ---
-js === <script>
-
-
-
-#### Estructura de un componente vue v-composition api
-
-<template>
-  <div id="app">
-  </div>
-</template>
-
-<script>
-  export default {
-    name: 'App',
-  }
-</script>
-
-<style>
-  #app {
-  }
-</style>
