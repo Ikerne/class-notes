@@ -1,6 +1,6 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-
+// 
+// import HelloWorld from './components/HelloWorld.vue'
 
 </script>
 
@@ -32,6 +32,8 @@ import HelloWorld from './components/HelloWorld.vue'
 <p class = "ver-1">A rich, incrementally adoptable ecosystem that scales between a library and a full-featured framework.</p>
 </section>
 </body>
+
+<!-- <main><hello-world></hello-world></main> -->
 </template>
 
 <style scoped>
@@ -242,5 +244,8 @@ color: #000000;
 .ver-1 {
   left: 880px;
 }
+
+
+
 
 </style>
