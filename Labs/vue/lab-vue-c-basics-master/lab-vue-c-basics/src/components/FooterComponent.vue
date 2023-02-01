@@ -19,7 +19,7 @@
         </ul>
         <!-- buton de login -->
         <button v-text="buttonText"></button>
-    </footer>
+      </footer>
     </header>
   </template>
   <!-- JS HERE -->
@@ -59,7 +59,7 @@
     justify-content: space-between;
     align-items: center;
     background: white;
-    margin-top: 90vw;
+    /* margin-top: 90vw; */
   }
   
   footer ul {

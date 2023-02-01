@@ -1,5 +1,3 @@
-es (8 sloc)  161 Bytes
-
 <!-- HTML HERE -->
 <template>
   <div :class="{ red: isRed }">
