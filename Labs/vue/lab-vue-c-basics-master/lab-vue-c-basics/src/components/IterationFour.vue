@@ -14,7 +14,7 @@
     
     export default {
       setup() {
-        const posts = ref([
+        const posts = reactive([
           { title: "Post title 1", description: "Description 1", content: "Content 1" },
           { title: "Post title 2", description: "Description 2", content: "Content 2" },
           { title: "Post title 3", description: "Description 3", content: "Content 3" },
