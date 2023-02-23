@@ -1,3 +1,4 @@
+<!-- HTML HERE -->
 <template>
   <div class="tweet">
     <ProfileImage :imageUrl="userPic" />
@@ -16,6 +17,7 @@
     <i class="fas fa-ellipsis-h"></i>
   </div>
 </template>
+<!-- JS HERE -->
 <script setup>
 import { ref, reactive } from "vue";
 import ProfileImage from "./ProfileImage.vue";
@@ -31,6 +33,7 @@ defineProps({
   postMessage: String,
 });
 </script>
+<!-- CSS HERE -->
 <style scoped>
 a {
   color: #42b983;
